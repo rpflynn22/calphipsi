@@ -1,0 +1,27 @@
+  div {margin:0;}
+	  body {background-color:#ffffff; font-family:helvetica,arial,sans-serif:; font-size:18px;}
+	  h1 {color:#153424; font-family:helvetica,arial,sans-serif; font-weight:bold;}
+	  h2, p {color:#000000; text-align:left; font-family:helvetica,arial,sans-serif;}
+	  #container {width:1000px; height:fluid; margin:auto; padding:0px; overflow:hidden}
+	  #home {float:left; height:40px; width:40px; margin:10px; background-image:url('../images/home.png');}
+	  #social {float:right; margin:20px;}
+	  .socialbutton {width:30px; height:30px; float:left;}
+	  #header {width:1000px; height:200px; padding 20px; position:relative;  background-image:url('../images/pkpshield.jpg');}
+          #navbar {width:1000px; height:50px; position:absolute; bottom:30px;}
+	  .navbutton {height:40px; float:left; width:140px; border-bottom-style:double; border-bottom-color:#2B6848; text-align:center;}
+          .break {height:40px; float:left; width:160px;}
+	  .navtext {text-decoration:none; color:#000000; font-size:20px; font-family:helvetica,arial,sans-serif;}
+	  .navtext:hover {color:##2B6848;}
+	  #content {width:960px; padding:20px; min-height:600px; overflow:hidden; text-align:center;}
+	  .contentmenu {height:200px; width:960px; margin-bottom:25px;}
+	  .contentbuttonleft {height:200px; width:400px; float:left; border-style:double; border-color:##2B6848;}
+	  .contentbuttonright {height:200px; width:400px; float:right; border-style:double; border-color:##2B6848;}
+	  #slideshow {width:720px; height:480px; border-style:double; border-color:##2B6848; text-align:center; border-style:double; border-color:#2B6848; overflow:hidden; display:inline-block;}
+	  .photo {width:800px; text-align:center; margin:0 auto; border-style:double; border-color:#2B6848; padding:2px;}
+	  #subcontentcontainer {width:220px; float:right;}
+	  .subcontent {width:200px; height:220px; border-style:double; border-color:#2B6848; margin:auto;margin-bottom:20px}
+	  #composite {width:800px; height:629px; text-align:center; margin:0 auto; border-style:double; border-color:#2B6848; padding:2px; background-image:url('../images/composite.png'); margin-top:40px;}
+	  a {text-decoration:none; color:#000000;}
+	  a:hover {color:#000000;}
+          #footer {width:1000px; height:50px; position:relative; border-top-style:double; border-color:#2B6848; bottom:0px; margin-top:20px;}
+		  

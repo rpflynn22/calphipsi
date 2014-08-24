@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		var c_pressed=false;
+		var r_pressed=false;
+		var e_pressed=false;
+		var a_pressed=false;
+		var t_pressed=false;
+		var o_pressed=false;
+		var r0_pressed=false;
+		document.onkeypress=function(e) {
+			var e = window.event || e;
+			e = String.fromCharCode(e.charCode)
+			switch (e) {
+				case "c":
+					c_pressed=true;
+					break;
+				case "r":
+					if (c_pressed && r_pressed && e_pressed && a_pressed && t_pressed && o_pressed) {
+						alert("all hail ryan, the mighty creator!!");
+						allFalse();
+					}
+					else if (c_pressed) {
+						r_pressed = true;
+					} else {
+						allFalse();
+					}
+					break;
+				case "e":
+					if (c_pressed && r_pressed) {
+						e_pressed = true;
+					} else {
+						allFalse();
+					}
+					break;
+				case "a":
+					if (c_pressed && r_pressed && e_pressed) {
+						a_pressed = true;
+					} else {
+						allFalse();
+					}
+					break;
+				case "t":
+					if (c_pressed && r_pressed && e_pressed && a_pressed) {
+						t_pressed = true;
+					} else {
+						allFalse();
+					}
+					break;
+				case "o":
+					if (c_pressed && r_pressed && e_pressed && a_pressed && t_pressed) {
+						o_pressed = true;
+					} else {
+						allFalse();
+					}
+					break;
+				default:
+					allFalse();
+			}
+		}
+		function allFalse() {
+			c_pressed=false;
+			r_pressed=false;
+			e_pressed=false;
+			a_pressed=false;
+			t_pressed=false;
+			o_pressed=false;
+			r0_pressed=false;
+		}
+		$(document).ready(function() {
+			$("#slideshow > div:gt(0)").hide();
+			$("#national_description").hide();
+
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+
+			$("#part1").hover(function() {
+				$(this).find("img").animate({"opacity":".6"});
+				$(this).find(".showable").show();
+			},
+			function() {
+				$(this).find("img").animate({"opacity":"1"});
+				$(this).find(".showable").hide();
+			});
+		});
+	</script>
+	<style>
+		#slideshow { 
+		    margin: 50px auto; 
+		    position: relative; 
+		    width: 240px; 
+		    height: 240px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+		#slideshow > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#part1 {
+			position: relative;
+			left:0;
+			top:0;
+			width:400px;
+		}
+
+		#national {
+			position: relative;
+			top:0;
+			left:0;
+			width:400px;
+		}
+
+		#national_description {
+			position: absolute;
+			bottom:4px;
+			background-color: #636363;
+			color: #ffffff;
+			text-align: center;
+			width:400px;
+			height:20px;
+		}
+
+	</style>
+	<title>
+
+	</title>
+</head>
+<body>
+	<div id="slideshow">
+	    <div>
+	    	<img src="http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+	    </div>
+	    <div>
+	    	<img src="http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+	    </div>
+	    <div>
+	    	Pretty cool eh? This slide is proof the content can be anything.
+	    </div>
+	</div>
+	<br/><br/><br/><br/><br/><br/>
+	<div id="part1">
+		<img id="national" src="assets/images/nationalhistory.png" />
+		<div class="showable" id="national_description">History of the National Fraternity</div>
+	</div>
+</body>

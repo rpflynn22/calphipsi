@@ -1,0 +1,114 @@
+#horizontal_activity_div {
+	margin-top: 50px;
+}
+#activities {
+	width: 300px;
+	float: left;
+}
+
+.activity_item {
+	position:relative;
+	text-align: left;
+	padding-bottom: 10px;
+	padding-top:10px;
+	cursor:pointer;
+}
+
+#selection_bar {
+	width:410px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+#inner_option {
+	cursor: pointer;
+}
+
+.selection_bar_option {
+	float:left;
+	font-size: 25px;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#selection_bar_left {
+	text-align: left;
+	width:180px;
+	margin-right: 70px;
+}
+
+#selection_bar_right {
+	text-align: right;
+	width:155px;
+}
+
+#rush_contact_pictures {
+	width:630px;
+	height:200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.rush_contact_person {
+	float:left;
+	width:198px;
+	height:198px;
+	margin: 5px;
+}
+
+#rush_phi_psi_img {
+	width:100%;
+}
+
+.rush_contact_img {
+	margin-right:20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	float:left;
+}
+
+.rush_contact h3:hover {
+	text-decoration: underline;
+}
+
+#tits_slideshow {
+	margin-top: 50px;
+}
+
+.rush_tits_img {
+	width:800px;
+}
+
+.dest h2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rush_contact h3 {
+	text-align: right;
+	padding-right: 40px;
+}
+
+.rush_contact_pic {
+	height:200px;
+}
+
+.rush_contact_img {
+	height: 170px;
+}
+
+.activity_item img {
+	height:20px;
+	float: right;
+}
+
+.not_last {
+	border-bottom: 1px solid #777777;
+}
+
+#activity_description_container {
+	margin-left: 350px;	
+}
